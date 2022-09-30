@@ -4,13 +4,13 @@ services:
       depends_on:
          - backend
       container_name: sw_frontend
-      image: sw_frontend
+      image: uuderder/sw_frontend
       ports:
          - 80:80
 
    backend:
       container_name: sw_backend
-      image: sw_backend
+      image: uuderder/sw_backend
       ports:
          - 192.168.45.103:8080:8080
       volumes:
