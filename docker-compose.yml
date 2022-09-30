@@ -1,0 +1,21 @@
+version: '3'
+services:
+   frontend:
+      depends_on:
+         - backend
+      container_name: sw_frontend
+      image: sw_frontend
+      ports:
+         - 80:80
+
+   backend:
+      container_name: sw_backend
+      image: sw_backend
+      ports:
+         - 192.168.45.103:8080:8080
+      volumes:
+         - ./single_well_files/files:/backend/app/files/
+         - ./single_well_files/PageJson/zh:/backend/app/PageJson/zh
+         - ./single_well_files/PageJson/ch:/backend/app/PageJson/ch
+         - ./single_well_files/PageJson/en:/backend/app/PageJson/en
+
