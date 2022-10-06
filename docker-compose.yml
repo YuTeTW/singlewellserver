@@ -12,7 +12,7 @@ services:
       container_name: sw_backend
       image: uuderder/sw_backend
       ports:
-         - 192.168.45.77:8080:8080
+         - 192.168.1.28:8080:8080
       volumes:
          - ./single_well_files/files:/backend/app/files/
          - ./single_well_files/PageJson/zh:/backend/app/PageJson/zh
