@@ -18,4 +18,5 @@ services:
          - ./single_well_files/PageJson/zh:/backend/app/PageJson/zh
          - ./single_well_files/PageJson/ch:/backend/app/PageJson/ch
          - ./single_well_files/PageJson/en:/backend/app/PageJson/en
+         - ./single_well_files/SingleWell.db:/backend/SingleWell.db
 
